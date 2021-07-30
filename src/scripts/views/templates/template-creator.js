@@ -70,12 +70,12 @@ const RestaurantItem = (restaurants) => `
   <div>
     <div class="card-fifth">
         <div class="rating">
-            <img tabindex="0" data-src="../images/heros/star.svg" width="14vh" alt="rating"> 
+            <img tabindex="0" src="../images/heros/star.svg" width="14vh" alt="rating"> 
             <p tabindex="0" class="p-rating">${restaurants.rating}</p>
         </div>
         <picture>
-          <img tabindex="0" class="img-fifth lazyload" alt="${restaurants.name}"
-            src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}">
+          <img tabindex="0" class="img-fifth lazyload" alt="image ${restaurants.name}" src="./images/placeholder-large.jpg"
+            data-src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}">
         </picture>
         <div class="city">
           <p tabindex="0" class="p-city">${restaurants.city}</p>

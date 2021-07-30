@@ -74,6 +74,9 @@ module.exports = {
       ],
       overrideExtension: true,
     }),
-    new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: "static", 
+      openAnalyzer: false
+    }),
   ],
 };

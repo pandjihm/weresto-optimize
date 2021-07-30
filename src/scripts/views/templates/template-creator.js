@@ -4,7 +4,7 @@ const RestaurantDetail = (restaurant) => `
   <div class="grid-detail">
     <div>
       <picture>
-        <img class="detail-img lazyload" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
+        <img class="detail-img lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
       </picture>
     </div>
     <div class="detail-info">  
@@ -70,7 +70,7 @@ const RestaurantItem = (restaurants) => `
   <div>
     <div class="card-fifth">
         <div class="rating">
-            <img tabindex="0" src="../images/heros/star.svg" width="14vh" alt="rating"> 
+            <img tabindex="0" data-src="../images/heros/star.svg" width="14vh" alt="rating"> 
             <p tabindex="0" class="p-rating">${restaurants.rating}</p>
         </div>
         <picture>

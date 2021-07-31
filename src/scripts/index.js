@@ -12,6 +12,9 @@ import './components/footer-bar';
 
 import '../styles/main.css';
 import '../styles/responsive.css';
+import '../styles/humberger.css';
+import '../styles/restaurant.css';
+import '../styles/spinner.css';
 
 import App from './views/app';
 import './utils/toggle';

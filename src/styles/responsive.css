@@ -244,6 +244,9 @@ Mobile
 /*
 Mobile First Section
 */
+    .bg-img {
+        background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.65)), url("../public/images/heros/hero-image_1-small.jpg");
+    }
 
     .second {
         line-height: 1.25em;

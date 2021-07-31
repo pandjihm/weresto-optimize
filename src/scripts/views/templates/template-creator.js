@@ -74,7 +74,7 @@ const RestaurantItem = (restaurants) => `
             <p tabindex="0" class="p-rating">${restaurants.rating}</p>
         </div>
         <picture>
-          <img tabindex="0" class="img-fifth lazyload" alt="image ${restaurants.name}" src="./images/placeholder-large.jpg"
+          <img tabindex="0" class="img-fifth lazyload" alt="image ${restaurants.name}"
             data-src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}">
         </picture>
         <div class="city">

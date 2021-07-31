@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-Feature('Liking Restaurants');
+Feature('Unliking Restaurants');
 
 Before(({ I }) => {
   I.amOnPage('/#/like');
@@ -12,8 +12,7 @@ Scenario('showing empty favorite restaurant', ({ I }) => {
   I.seeElement('#restaurants');
   I.see(firstCondition, '#restaurants');
 });
-
-Scenario('liking one restaurant', async ({ I }) => {
+Scenario('unliking one restaurant', async ({ I }) => {
   I.see(firstCondition, '#restaurants');
 
   I.amOnPage('/');
@@ -28,7 +27,16 @@ Scenario('liking one restaurant', async ({ I }) => {
 
   I.amOnPage('/#/favorite');
   I.seeElement('.grid-detail');
-  const likedCardTitle = await I.grabTextFrom('.detail-nama');
+  const unlikedCardTitle = await I.grabTextFrom('.detail-nama');
+  assert.strictEqual(firstCardTitle, unlikedCardTitle);
 
-  assert.strictEqual(firstCardTitle, likedCardTitle);
+  I.seeElement('.card-fifth a');
+  await I.grabTextFrom(firstCard);
+  I.click(firstCard);
+
+  I.seeElement('#likeButton');
+  I.click('#likeButton');
+
+  I.amOnPage('/#/favorite');
+  I.see(firstCondition, '#restaurants');
 });

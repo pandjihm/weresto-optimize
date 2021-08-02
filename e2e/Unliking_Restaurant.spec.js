@@ -30,13 +30,12 @@ Scenario('unliking one restaurant', async ({ I }) => {
   const unlikedCardTitle = await I.grabTextFrom('.detail-nama');
   assert.strictEqual(firstCardTitle, unlikedCardTitle);
 
-  I.seeElement('.card-fifth a');
-  await I.grabTextFrom(firstCard);
-  I.click(firstCard);
+  I.wait(3);
 
   I.seeElement('#likeButton');
   I.click('#likeButton');
 
-  I.amOnPage('/#/favorite');
-  I.see(firstCondition, '#restaurants');
+  I.amOnPage('/#/like');
+
+  I.see(firstCondition);
 });

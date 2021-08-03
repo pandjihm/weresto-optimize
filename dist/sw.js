@@ -17,6 +17,19 @@ var serviceWorkerOption = {
     "/icons/icon-512x512.png",
     "/icons/icon-72x72.png",
     "/icons/icon-96x96.png",
+    "/images/heros/appstore.jpg",
+    "/images/heros/arrow.svg",
+    "/images/heros/circle.svg",
+    "/images/heros/dailysocial.svg",
+    "/images/heros/hero-image_1-large.jpg",
+    "/images/heros/hero-image_1-small.jpg",
+    "/images/heros/logo_weresto.svg",
+    "/images/heros/maps.svg",
+    "/images/heros/ourstory.jpg",
+    "/images/heros/square.svg",
+    "/images/heros/square45.svg",
+    "/images/heros/star.svg",
+    "/images/heros/techinasia.svg",
     "/index.html"
   ]
 };
